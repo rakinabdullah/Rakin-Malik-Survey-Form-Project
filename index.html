@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this survey form.</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Number</label>
+        <input type="number" id="number" name="number" placeholder="Enter a number between 1 and 10" min="1" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Choose an option</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Would you recommend Microverse to a friend?</label>
+        <label for="referrer"><input type="radio" name="referrer" value="referrer" id="referrer"/>Yes</label>
+        <label for="referrer"><input type="radio" name="referrer" value="referrer" id="referrer"/>No</label>
+      <div class="form-group">
+        <label>Choose all that apply</label>
+        <div>
+          <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+          <label for="checkbox1">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Additional comments</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
